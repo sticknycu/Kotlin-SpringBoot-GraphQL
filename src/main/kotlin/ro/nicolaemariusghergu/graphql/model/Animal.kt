@@ -1,3 +1,3 @@
-package ro.nicolaemarius.ghergu.graphql.model
+package ro.nicolaemariusghergu.graphql.model
 
 data class Animal(val id: String, val name: String, val race: String, val type: String)

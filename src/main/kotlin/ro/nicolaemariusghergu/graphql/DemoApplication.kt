@@ -1,4 +1,4 @@
-package ro.nicolaemarius.ghergu.graphql
+package ro.nicolaemariusghergu.graphql
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

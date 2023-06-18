@@ -1,6 +1,6 @@
-package ro.nicolaemarius.ghergu.graphql.service
+package ro.nicolaemariusghergu.graphql.service
 
-import ro.nicolaemarius.ghergu.graphql.model.Animal
+import ro.nicolaemariusghergu.graphql.model.Animal
 import org.springframework.stereotype.Service
 
 @Service
@@ -8,13 +8,9 @@ class AnimalResolver {
 
     private val animals: MutableList<Animal> = mutableListOf()
 
-    fun getAnimals(): List<Animal> {
-        return animals
-    }
+    fun getAnimals(): List<Animal> = animals
 
-    fun getAnimal(id: String): Animal? {
-        return animals.find { it.id == id }
-    }
+    fun getAnimal(id: String): Animal? = animals.find { it.id == id }
 
     fun createAnimal(name: String, race: String, type: String): Animal {
         val animal = Animal(
