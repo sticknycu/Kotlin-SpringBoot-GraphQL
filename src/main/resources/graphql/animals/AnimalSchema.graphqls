@@ -1,0 +1,17 @@
+type Query {
+    getAnimals: [Animal]
+    getAnimal(id: ID!): Animal
+}
+
+type Mutation {
+    createAnimal(name: String!, race: String!, type: String!): Animal
+    modifyAnimal(name: String!, race: String!): Animal
+    deleteAnimal(name: String!): [Animal]
+}
+
+type Animal {
+    id: ID!
+    name: String!
+    race: String!
+    type: String!
+}
